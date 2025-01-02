@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B44519122D2613E800C3E101 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = B44519112D2613E800C3E101 /* LaunchAtLogin */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B44518FA2D25FEE200C3E101 /* EthernetStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthernetStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44519122D2613E800C3E101 /* LaunchAtLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = EthernetStatus;
 			packageProductDependencies = (
+				B44519112D2613E800C3E101 /* LaunchAtLogin */,
 			);
 			productName = EthernetStatus;
 			productReference = B44518FA2D25FEE200C3E101 /* EthernetStatus.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = B44518F12D25FEE100C3E101;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B44519102D2613E800C3E101 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B44518FB2D25FEE200C3E101 /* Products */;
 			projectDirPath = "";
@@ -321,6 +330,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B44519102D2613E800C3E101 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B44519112D2613E800C3E101 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B44519102D2613E800C3E101 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B44518F22D25FEE100C3E101 /* Project object */;
 }
